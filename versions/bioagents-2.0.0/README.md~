@@ -1,0 +1,19 @@
+# What is bioagentsSchema?
+**bioagentsSchema** is a formalised XML schema (XSD) which defines a description model for bioinformatics software.  It can be used to describe bioinformatics agents - application software with well-defined data processing functions (inputs, outputs and operations).   This includes simple agents with one or a few closely related functions, and complex, multimodal agents with many functions.  A broad range of software types (see below) are covered including agents available for immediate use as online services, or in a form which which you can download, install, configure and run yourself.
+
+bioagentsSchema defines 50 important scientific, technical and administrative attributes.  It concentrates upon the salient common features, with a minimal mandatory core of 3 attributes (name, description and homepage).  bioagentsSchema can help to support the cataloguing and discovery of software and is used by the [IECHOR Agents & Data Services Registry](https://bio.agents).
+
+# Documentation
+Comprehensive documentation is available:
+* [Technical docs](https://github.com/bio-agents/bioagentsSchema/blob/master/versions/bioagents-3.0.0-rc/docs/bioagents-3.0.0.html) (save the HTML file and open it in your browser)
+* [General docs](http://bioagentsschema.readthedocs.io/en/latest/)
+
+
+# Information standard
+bioagentsSchema provides the foundation for a [agents information standard](https://github.com/bio-agents/bioagentsSchemaDocs/blob/master/information_requirement.rst#information-requirement) for the desription of agents.  It is being adopted by bio.agents and defines the attributes that must be defined within a 5-teir rating of entry completeness.
+
+# Software types 
+See the list of [software types](http://bioagents.readthedocs.io/en/latest/curators_guide.html#agent-type) supported by the schema.
+
+
+

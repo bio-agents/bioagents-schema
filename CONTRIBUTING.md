@@ -1,0 +1,1 @@
+We welcome contributions to bioagentsSchema. Contribution guidelines can be found in [the bioagentsSchema documentation](https://bioagentsschema.readthedocs.io/en/latest/what_is_bioagentsschema.html#how-to-contribute-to-bioagentsschema).
