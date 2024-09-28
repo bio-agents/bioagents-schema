@@ -1,4 +1,4 @@
-# Changelog for bioagentsSchema
+# Changelog for bioagents schema
 Description of changes are grouped as follows:
 * **Added:** new features
 * **Changed:** changes to existing functionality
@@ -7,16 +7,16 @@ Description of changes are grouped as follows:
 * **Fixed:** a bug fix
 * **Misc:** some miscellaneous other change
 
-# May 14 2020 bioagentsSchema-3.3.0.xsd release
-The major change is some flattening of the schema by removing the ```<summary>``` and ```<labels>``` elements whose only purpose was to organise / structure the schema.  All sub-elements have been preserved and are now nested under ```<agent>```.  This change ensures the XML and JSON schema variants of bioagentsSchema have the same structure (so far as possible).  For bioagentsSchemaJ (JSON variant) see https://github.com/bio-agents/bioagentsschemaj.
+# May 14 2020 bioagents schema-3.3.0.xsd release
+The major change is some flattening of the schema by removing the ```<summary>``` and ```<labels>``` elements whose only purpose was to organise / structure the schema.  All sub-elements have been preserved and are now nested under ```<agent>```.  This change ensures the XML and JSON schema variants of bioagents schema have the same structure (so far as possible).  For bioagents schemaJ (JSON variant) see https://github.com/bio-agents/bioagents-schemaj.
 
 ## Added
 
-* [[198](https://github.com/bio-agents/bioagentsSchema/issues/198)] ```credit->rorid``` element added: "Unique identifier (ROR ID) of an organisation that is credited."
-* [[114](https://github.com/bio-agents/bioagentsSchema/issues/114)] ```credit->fundrefid``` element added: "Unique identifier (FundRef ID or Funder ID) of a funding organisation that is credited."
-* [[178](https://github.com/bio-agents/bioagentsSchema/issues/178)] ```documentation->type``` enum extended with *Quick start guide*: "A short guide helping the end-user to use the software as soon as possible."
-* [[189](https://github.com/bio-agents/bioagentsSchema/issues/189)] ```agent->iechorCommunity``` enum added: "IECHOR (or other) community to which the software is relevant."  See https://bioagentsschema.readthedocs.io/en/latest/controlled_vocabularies.html#iechor-community.
-* [[195](https://github.com/bio-agents/bioagentsSchema/issues/195)] ```agent->language``` enum extended with *Elm*
+* [[198](https://github.com/bio-agents/bioagents schema/issues/198)] ```credit->rorid``` element added: "Unique identifier (ROR ID) of an organisation that is credited."
+* [[114](https://github.com/bio-agents/bioagents schema/issues/114)] ```credit->fundrefid``` element added: "Unique identifier (FundRef ID or Funder ID) of a funding organisation that is credited."
+* [[178](https://github.com/bio-agents/bioagents schema/issues/178)] ```documentation->type``` enum extended with *Quick start guide*: "A short guide helping the end-user to use the software as soon as possible."
+* [[189](https://github.com/bio-agents/bioagents schema/issues/189)] ```agent->iechorCommunity``` enum added: "IECHOR (or other) community to which the software is relevant."  See https://bioagents-schema.readthedocs.io/en/latest/controlled_vocabularies.html#iechor-community.
+* [[195](https://github.com/bio-agents/bioagents schema/issues/195)] ```agent->language``` enum extended with *Elm*
 * ```accessibility``` enum extended with *Open access (with restrictions)*: *"An online service which is available for use to all, but possibly with some usage limitations and other restrictions."*
 
 ## Changed
@@ -24,78 +24,78 @@ The major change is some flattening of the schema by removing the ```<summary>``
 	
 ## Deprecated
 ## Removed
-* [[196](https://github.com/bio-agents/bioagentsSchema/issues/196)] ```agent->labels``` and ```agent->summary``` elements removed (sub-elements are now nested under ```agent``` element)
+* [[196](https://github.com/bio-agents/bioagents schema/issues/196)] ```agent->labels``` and ```agent->summary``` elements removed (sub-elements are now nested under ```agent``` element)
 
 ## Fixed
 ## Misc
-* [[181](https://github.com/bio-agents/bioagentsSchema/issues/181)] ```isAvailable``` global element removed (no longer required)
-* [[187](https://github.com/bio-agents/bioagentsSchema/issues/187)] ```download->type``` of *Test data* redefined : *"Data for testing the scientific performance of the software or whether it is working correctly."*
+* [[181](https://github.com/bio-agents/bioagents schema/issues/181)] ```isAvailable``` global element removed (no longer required)
+* [[187](https://github.com/bio-agents/bioagents schema/issues/187)] ```download->type``` of *Test data* redefined : *"Data for testing the scientific performance of the software or whether it is working correctly."*
 
 
-# November 25 2019 bioagentsSchema-3.2.0.xsd released
+# November 25 2019 bioagents schema-3.2.0.xsd released
 
 ## Added
 Extensions to enums defining types of things:
-* [[177](https://github.com/bio-agents/bioagentsSchema/issues/177)] ```publication->note``` element added: *"Comment about the publication."*
-* [[172](https://github.com/bio-agents/bioagentsSchema/issues/172)] ```credit->gridid``` element added: *"Unique identifier (GRID ID) of an organisation that is credited."* with pattern ```grid.[0-9]{4,}.[a-f0-9]{1,2``` : to support organisational IDs
-* [[148](https://github.com/bio-agents/bioagentsSchema/issues/148)] ```credit->orcidid``` regex pattern now supports ```http://``` (as well as ```https://``)
+* [[177](https://github.com/bio-agents/bioagents schema/issues/177)] ```publication->note``` element added: *"Comment about the publication."*
+* [[172](https://github.com/bio-agents/bioagents schema/issues/172)] ```credit->gridid``` element added: *"Unique identifier (GRID ID) of an organisation that is credited."* with pattern ```grid.[0-9]{4,}.[a-f0-9]{1,2``` : to support organisational IDs
+* [[148](https://github.com/bio-agents/bioagents schema/issues/148)] ```credit->orcidid``` regex pattern now supports ```http://``` (as well as ```https://``)
 
 Other:
-* [[162](https://github.com/bio-agents/bioagentsSchema/issues/162)] ```documentation->type``` enum extended with *Code of conduct*: *"A set of guidelines or rules outlining the norms, expectations, responsibilities and proper practice for individuals working within the software project."*
-* [[152](https://github.com/bio-agents/bioagentsSchema/issues/152)] ```link->type``` enum extended with *Galaxy service*: *"An online service providing the agent through the Galaxy platform."*
-* [[149](https://github.com/bio-agents/bioagentsSchema/issues/149)] ```agentType``` enum extended with *Bioinformatics portal*: *"A web site providing a platform/portal to multiple resources used for research in a focused area, including biological databases, web applications, training resources and so on."* : although not really "agents" this is pragmatic to include (lots of entries in *bio.agents* match this description).
+* [[162](https://github.com/bio-agents/bioagents schema/issues/162)] ```documentation->type``` enum extended with *Code of conduct*: *"A set of guidelines or rules outlining the norms, expectations, responsibilities and proper practice for individuals working within the software project."*
+* [[152](https://github.com/bio-agents/bioagents schema/issues/152)] ```link->type``` enum extended with *Galaxy service*: *"An online service providing the agent through the Galaxy platform."*
+* [[149](https://github.com/bio-agents/bioagents schema/issues/149)] ```agentType``` enum extended with *Bioinformatics portal*: *"A web site providing a platform/portal to multiple resources used for research in a focused area, including biological databases, web applications, training resources and so on."* : although not really "agents" this is pragmatic to include (lots of entries in *bio.agents* match this description).
 
 
 ## Changed
 Changes to cardinality enabling more precise annotation and simpler==cleaner data:
-* [[176](https://github.com/bio-agents/bioagentsSchema/issues/176)] ```publication->type``` cardinality now *0...many* (was *0...1*) 
-* [[174](https://github.com/bio-agents/bioagentsSchema/issues/174)] ```documentation->type``` cardinality now *1...many* (was *1 only*) 
-* [[163](https://github.com/bio-agents/bioagentsSchema/issues/163)] ```link->type``` cardinality now *1...many* (was *1 only*) 
-* [[154](https://github.com/bio-agents/bioagentsSchema/issues/154)] ```accessibility``` cardinality now *0 or 1* (was 0...many) given there are now two mutually exclusive terms for this value.
+* [[176](https://github.com/bio-agents/bioagents schema/issues/176)] ```publication->type``` cardinality now *0...many* (was *0...1*) 
+* [[174](https://github.com/bio-agents/bioagents schema/issues/174)] ```documentation->type``` cardinality now *1...many* (was *1 only*) 
+* [[163](https://github.com/bio-agents/bioagents schema/issues/163)] ```link->type``` cardinality now *1...many* (was *1 only*) 
+* [[154](https://github.com/bio-agents/bioagents schema/issues/154)] ```accessibility``` cardinality now *0 or 1* (was 0...many) given there are now two mutually exclusive terms for this value.
 
 Changes to enum values to improve specificity:
-* [[173](https://github.com/bio-agents/bioagentsSchema/issues/173)] ```license->type``` enum changed *Unlicensed* to *Not licensed* : to avoid confusion with the *Unlicense* license
-* [[167](https://github.com/bio-agents/bioagentsSchema/issues/167)] ```download->type``` value of *CWL file* changed to *Agent wrapper (CWL)* and redefined to *"Agent wrapper in Common Workflow Language (CWL) format for the software."* : to make it consistent with the other types of agent wrapper that are supported. 
-* [[166](https://github.com/bio-agents/bioagentsSchema/issues/166)] ```publication-type``` enum value *Comparison* changed to *Benchmarking study* and redefined as *"A publication which assessed the performance of the agent"* : makes it more explicit and more useful.
-* [[156](https://github.com/bio-agents/bioagentsSchema/issues/156)] ```link-type``` enum value *Registry* changed to *Software catalogue* and redefined as *"Some registry, catalogue etc. other than bio.agents where the agent is also described."* : makes it clearer.
-* [[154](https://github.com/bio-agents/bioagentsSchema/issues/154)] ```license``` enum value *Freeware* added *""* : 
+* [[173](https://github.com/bio-agents/bioagents schema/issues/173)] ```license->type``` enum changed *Unlicensed* to *Not licensed* : to avoid confusion with the *Unlicense* license
+* [[167](https://github.com/bio-agents/bioagents schema/issues/167)] ```download->type``` value of *CWL file* changed to *Agent wrapper (CWL)* and redefined to *"Agent wrapper in Common Workflow Language (CWL) format for the software."* : to make it consistent with the other types of agent wrapper that are supported. 
+* [[166](https://github.com/bio-agents/bioagents schema/issues/166)] ```publication-type``` enum value *Comparison* changed to *Benchmarking study* and redefined as *"A publication which assessed the performance of the agent"* : makes it more explicit and more useful.
+* [[156](https://github.com/bio-agents/bioagents schema/issues/156)] ```link-type``` enum value *Registry* changed to *Software catalogue* and redefined as *"Some registry, catalogue etc. other than bio.agents where the agent is also described."* : makes it clearer.
+* [[154](https://github.com/bio-agents/bioagents schema/issues/154)] ```license``` enum value *Freeware* added *""* : 
 *"Proprietary software that is available for use at no monetary cost. In other words, freeware may be used without payment but may usually not be modified, re-distributed or reverse-engineered without the author's permission."*
-* [[151](https://github.com/bio-agents/bioagentsSchema/issues/151)] ```documentation-type``` enum value *Manual* changed to *User manual* and redefined as *"Information on how to use the software, tailored to the end-user."* : makes it clearer.
+* [[151](https://github.com/bio-agents/bioagents schema/issues/151)] ```documentation-type``` enum value *Manual* changed to *User manual* and redefined as *"Information on how to use the software, tailored to the end-user."* : makes it clearer.
 
 Other changes:
-* [[148](https://github.com/bio-agents/bioagentsSchema/issues/148)] ```.``` character now escaped consistently in all regex patterns.
+* [[148](https://github.com/bio-agents/bioagents schema/issues/148)] ```.``` character now escaped consistently in all regex patterns.
 
 
 ## Deprecated
 
 ## Removed
 Removing enum values to improve scope focus:
-* [[166](https://github.com/bio-agents/bioagentsSchema/issues/166)] ```link-type``` enum value *Scientific benchmark* removed : it was conflated / redundant with ```publication->type``` of *Benchmarking study* 
-* [[164](https://github.com/bio-agents/bioagentsSchema/issues/164)] ```download->type``` enum value *Binary package* and *Source package* replaced by *Software package* defined as *"A software package; a bundle of files and information about those files, typically including source code and / or binaries"* : to simplify the model / reflect reality better.
-* [[161](https://github.com/bio-agents/bioagentsSchema/issues/161)] ```documentation-type``` enum value *Tutorial* removed : it was not needed given the general-purpose *Training material*, which is now redefined as *"Online training material such as a tutorial, a presentation, video etc."* : out of biagentsSchema scope to describe all the different types of training material!
-* [[159](https://github.com/bio-agents/bioagentsSchema/issues/159)] ```download-type``` enum value *Ontology* removed : too much of an edge-case to justify keeping. 
-* [[154](https://github.com/bio-agents/bioagentsSchema/issues/154)] ```accessibility``` enum value *Proprietary* and *Freeware* removed : it was conflated / redundant with ```license``` 
+* [[166](https://github.com/bio-agents/bioagents schema/issues/166)] ```link-type``` enum value *Scientific benchmark* removed : it was conflated / redundant with ```publication->type``` of *Benchmarking study* 
+* [[164](https://github.com/bio-agents/bioagents schema/issues/164)] ```download->type``` enum value *Binary package* and *Source package* replaced by *Software package* defined as *"A software package; a bundle of files and information about those files, typically including source code and / or binaries"* : to simplify the model / reflect reality better.
+* [[161](https://github.com/bio-agents/bioagents schema/issues/161)] ```documentation-type``` enum value *Tutorial* removed : it was not needed given the general-purpose *Training material*, which is now redefined as *"Online training material such as a tutorial, a presentation, video etc."* : out of biagentsSchema scope to describe all the different types of training material!
+* [[159](https://github.com/bio-agents/bioagents schema/issues/159)] ```download-type``` enum value *Ontology* removed : too much of an edge-case to justify keeping. 
+* [[154](https://github.com/bio-agents/bioagents schema/issues/154)] ```accessibility``` enum value *Proprietary* and *Freeware* removed : it was conflated / redundant with ```license``` 
 
 ## Fixed
-* [[148](https://github.com/bio-agents/bioagentsSchema/issues/148)] ```labels->license``` enum value *Julia* removed (it's a programming language!)
+* [[148](https://github.com/bio-agents/bioagents schema/issues/148)] ```labels->license``` enum value *Julia* removed (it's a programming language!)
 
 ## Misc
 Redefinition of enum values to make their meaning clearer:
-* [[155](https://github.com/bio-agents/bioagentsSchema/issues/155)] ```link-type``` enum value *Helpdesk* redefined as *"A phone line, web site or email-based system providing help to the end-user of the software."* : makes it clearer.
-* [[164](https://github.com/bio-agents/bioagentsSchema/issues/164)] ```download->type``` enum value *Binaries* redefined as *"Binaries for the software; compiled code that allow a program to be installed without having to compile the source code."*
-* [[164](https://github.com/bio-agents/bioagentsSchema/issues/164)] ```download->type``` enum value *Source code* redefined as *"The source code for the software, that can be compiled or assembled into an executable computer program."* 
-* [[160](https://github.com/bio-agents/bioagentsSchema/issues/160)] ```documentation->type``` enum value *Citation instructions* redefined as *"Information on how to correctly cite use of the software; typically which publication(s) to cite, or something more general, e.g. a form of words to use."* 
-* [[157](https://github.com/bio-agents/bioagentsSchema/issues/157)] ```link->type``` enum value *Repository* redefined as *"A place where source code, data and other files can be retrieved from, typically via platforms like GitHub which provide version control and other features, or something simpler, e.g. an FTP site."* 
-* [[153](https://github.com/bio-agents/bioagentsSchema/issues/153)] ```link->type``` enum value *Service* redefined as *"An online service (other than Galaxy) that provides access (an interface) to the software."* 
-* [[150](https://github.com/bio-agents/bioagentsSchema/issues/150)] ```agentType``` enum value *Database portal* redefined as *"A Web site providing a portal to a biological database, typically allowing a user to browse, deposit, search, visualise, analyse or download data."* 
-* [[154](https://github.com/bio-agents/bioagentsSchema/issues/154)] ```accessibility``` redefined as *"Whether an online service is freely available for use."*
+* [[155](https://github.com/bio-agents/bioagents schema/issues/155)] ```link-type``` enum value *Helpdesk* redefined as *"A phone line, web site or email-based system providing help to the end-user of the software."* : makes it clearer.
+* [[164](https://github.com/bio-agents/bioagents schema/issues/164)] ```download->type``` enum value *Binaries* redefined as *"Binaries for the software; compiled code that allow a program to be installed without having to compile the source code."*
+* [[164](https://github.com/bio-agents/bioagents schema/issues/164)] ```download->type``` enum value *Source code* redefined as *"The source code for the software, that can be compiled or assembled into an executable computer program."* 
+* [[160](https://github.com/bio-agents/bioagents schema/issues/160)] ```documentation->type``` enum value *Citation instructions* redefined as *"Information on how to correctly cite use of the software; typically which publication(s) to cite, or something more general, e.g. a form of words to use."* 
+* [[157](https://github.com/bio-agents/bioagents schema/issues/157)] ```link->type``` enum value *Repository* redefined as *"A place where source code, data and other files can be retrieved from, typically via platforms like GitHub which provide version control and other features, or something simpler, e.g. an FTP site."* 
+* [[153](https://github.com/bio-agents/bioagents schema/issues/153)] ```link->type``` enum value *Service* redefined as *"An online service (other than Galaxy) that provides access (an interface) to the software."* 
+* [[150](https://github.com/bio-agents/bioagents schema/issues/150)] ```agentType``` enum value *Database portal* redefined as *"A Web site providing a portal to a biological database, typically allowing a user to browse, deposit, search, visualise, analyse or download data."* 
+* [[154](https://github.com/bio-agents/bioagents schema/issues/154)] ```accessibility``` redefined as *"Whether an online service is freely available for use."*
 
 Other:
-* [[179](https://github.com/bio-agents/bioagentsSchema/issues/179)] Removed ```<bioagentsUsage></bioagentsUsage>```  annotations (in ```<xs:annotation>``` elements) indicating whether an element was "Mandatory", "Recommended" *etc* : this is now redundant as it is handled in the emerging [Agent Information Profiles](https://github.com/bio-agents/Agent-Information-Standard/tree/master/agentInformationProfiles).
-* [[148](https://github.com/bio-agents/bioagentsSchema/issues/148)] ```doi``` regex pattern now consistent wherever it's used (```otherId->value``` and ```publication->doi```).
+* [[179](https://github.com/bio-agents/bioagents schema/issues/179)] Removed ```<bioagentsUsage></bioagentsUsage>```  annotations (in ```<xs:annotation>``` elements) indicating whether an element was "Mandatory", "Recommended" *etc* : this is now redundant as it is handled in the emerging [Agent Information Profiles](https://github.com/bio-agents/Agent-Information-Standard/tree/master/agentInformationProfiles).
+* [[148](https://github.com/bio-agents/bioagents schema/issues/148)] ```doi``` regex pattern now consistent wherever it's used (```otherId->value``` and ```publication->doi```).
 
 
-# June 03 2019 bioagentsSchema-3.1.0.xsd released
+# June 03 2019 bioagents schema-3.1.0.xsd released
 
 ## Added
 1. ```agent->relation``` elements added: "Details of a relationship this software shares with other software registered in bio.agents."
@@ -171,10 +171,10 @@ Other:
 
 2. Target and default namespace set to "https://bio.agents"
 	
-# August 01 2018 bioagentsSchema-3.0.0.xsd released
+# August 01 2018 bioagents schema-3.0.0.xsd released
 
 
-Changes since bioagentsSchema-3.0.0-rc-rev1.xsd released
+Changes since bioagents schema-3.0.0-rc-rev1.xsd released
 
 ## Changed
 1. regex patterns on ```otherID->value``` improved:
@@ -197,7 +197,7 @@ Changes since bioagentsSchema-3.0.0-rc-rev1.xsd released
 
 
 
-# March 1 2018 bioagentsSchema-3.0.0-rc-rev1.xsd released
+# March 1 2018 bioagents schema-3.0.0-rc-rev1.xsd released
 ## Added
 
 ## Changed
@@ -216,7 +216,7 @@ Changes since bioagentsSchema-3.0.0-rc-rev1.xsd released
 1. ```iechorInfo``` element grouping removed.  These data can be handled internally by IECHOR Hub (or can be reinstated in future).
 2. ```apiSpec``` element grouping removed.  This can be reinstated as needed.
 3. ```relation``` element grouping removed.  This can be reinstated as needed.
-4. ```isAvailable``` elements removed: specification of information known to be unavailable (as required by the bio.agents [information standard](https://github.com/bio-agents/bioagentsSchemaDocs/blob/master/information_requirement.rst) will be handled internally by bio.agents
+4. ```isAvailable``` elements removed: specification of information known to be unavailable (as required by the bio.agents [information standard](https://github.com/bio-agents/bioagents schemaDocs/blob/master/information_requirement.rst) will be handled internally by bio.agents
 
    * ```publication->isAvailable```
    * ```link->isAvailable```
@@ -240,10 +240,10 @@ Changes since bioagentsSchema-3.0.0-rc-rev1.xsd released
 ## Misc
 
 
-# January 26 2018 bioagentsSchema-3.0.0-rc.xsd released
+# January 26 2018 bioagents schema-3.0.0-rc.xsd released
 
 ## Added
-1. ```isAvailable``` elements added to support the specification that an attribute is not available for a agent (as required by the bio.agents information standard (https://github.com/bio-agents/bioagentsSchemaDocs/blob/master/information_requirement.rst)
+1. ```isAvailable``` elements added to support the specification that an attribute is not available for a agent (as required by the bio.agents information standard (https://github.com/bio-agents/bioagents schemaDocs/blob/master/information_requirement.rst)
 
     1.1 ```publication->isAvailable```
     1.2 ```linkType``` complexType as used in ```link->isAvailable``` and ```documentation->isAvailable```
@@ -357,16 +357,16 @@ Changes since bioagentsSchema-3.0.0-rc-rev1.xsd released
 
 
 
-# November 17, 2016 bioagentsSchema-2.0.0.xsd released
+# November 17, 2016 bioagents schema-2.0.0.xsd released
 Sorry, no bandwidth to provide summary of changes : please see the schema documentation.  changelog will be maintained properly henceforth!
 
-# November 8, 2016 bioagentsSchema-2.0-beta04.xsd released
+# November 8, 2016 bioagents schema-2.0-beta04.xsd released
 Sorry, no bandwidth to provide summary of changes : please see the schema documentation.
 
-# November 3, 2016 bioagentsSchema-2.0-beta03.xsd released
+# November 3, 2016 bioagents schema-2.0-beta03.xsd released
 Sorry, no bandwidth to provide summary of changes : please see the schema documentation.
 
-# October 22, 2016 bioagentsXSD officially renamed to bioagentsSchema, bioagentsSchema-2.0-beta02.xsd released
+# October 22, 2016 bioagentsXSD officially renamed to bioagents schema, bioagents schema-2.0-beta02.xsd released
 Sorry, no bandwidth to provide summary of changes : please see the schema documentation.
 
 # August 12, 2016  bioagentsXSD-2.0-beta01.xsd released

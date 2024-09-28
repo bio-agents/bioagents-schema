@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- edited with XMLSpy v2019 rel. 3 (x64) (http://www.altova.com) by Jon Ison (private) -->
 <!-- edited at GitHub (https://github.com) by Matus Kalas -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:altova="http://www.altova.com/xml-schema-extensions" xmlns="bioagentsSchema" targetNamespace="bioagentsSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:altova="http://www.altova.com/xml-schema-extensions" xmlns="bioagents schema" targetNamespace="bioagents schema" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<xs:element name="agents">
 		<xs:annotation>
 			<xs:documentation>Description of one or more bioinformatics agents - application software with well-defined data processing functions (inputs, outputs and operations).  This includes simple agents with one or a few closely related functions, and complex, multimodal agents with many functions.  Agents may be available available for immediate use as online services, or in a form which which you can download, install, configure and run yourself.</xs:documentation>
@@ -698,10 +698,10 @@
 										</enumItem>
 										<enumItem>
 											<term>Other</term>
-											<uiTip>Software under license not currently supported by bioagentsSchema.</uiTip>
+											<uiTip>Software under license not currently supported by bioagents schema.</uiTip>
 										</enumItem>
 									</xs:appinfo>
-									<xs:documentation>Use "Proprietary" where the software must be obtained from the provider (e.g. for money), and is then owned.  Use "Freeware" for proprietary software that is available at no monetary cost. Use "Not licensed" for software which is not licensed and is not proprietary, and "Other" for software under license not currently supported by bioagentsSchema.</xs:documentation>
+									<xs:documentation>Use "Proprietary" where the software must be obtained from the provider (e.g. for money), and is then owned.  Use "Freeware" for proprietary software that is available at no monetary cost. Use "Not licensed" for software which is not licensed and is not proprietary, and "Other" for software under license not currently supported by bioagents schema.</xs:documentation>
 									<xs:documentation>Note that for online services, the license attribute refers to the license of the underlying software or data, or a part of those.</xs:documentation>
 								</xs:annotation>
 								<xs:simpleType>
@@ -1545,7 +1545,7 @@
 													</enumItem>
 													<enumItem>
 														<term>Other</term>
-														<uiTip>Some other type of documentation not listed in bioagentsSchema.</uiTip>
+														<uiTip>Some other type of documentation not listed in bioagents schema.</uiTip>
 													</enumItem>
 												</enum>
 											</xs:appinfo>

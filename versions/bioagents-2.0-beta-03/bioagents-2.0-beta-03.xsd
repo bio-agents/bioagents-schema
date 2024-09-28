@@ -330,7 +330,7 @@
 							<xs:element name="agentType" maxOccurs="unbounded">
 								<xs:annotation>
 									<xs:documentation>A type of application software: a discrete software entity can have more than one type.</xs:documentation>
-									<xs:documentation>bio.agents includes all types of bioinformatics agents: application software with well-defined data processing functions (inputs, outputs and operations). When registering a agent, one or more agent types may be assigned, reflecting the different facets of the software being described. For an explanation of valid values see github.com/bio-agents/bioagentsschema.</xs:documentation>
+									<xs:documentation>bio.agents includes all types of bioinformatics agents: application software with well-defined data processing functions (inputs, outputs and operations). When registering a agent, one or more agent types may be assigned, reflecting the different facets of the software being described. For an explanation of valid values see github.com/bio-agents/bioagents-schema.</xs:documentation>
 									<xs:appinfo>
 										<uiTip>Type of agent.  A agent may have more than one type reflecting its different facets.</uiTip>
 										<bioagentsUsage>Mandatory</bioagentsUsage>
@@ -529,7 +529,7 @@
 										<uiTip>Operating system supported by a downloadable software package.</uiTip>
 										<bioagentsUsage>Recommended</bioagentsUsage>
 									</xs:appinfo>
-									<xs:documentation>For an explanation of valid values see github.com/bio-agents/bioagentsschema.</xs:documentation>
+									<xs:documentation>For an explanation of valid values see github.com/bio-agents/bioagents-schema.</xs:documentation>
 								</xs:annotation>
 								<xs:simpleType>
 									<xs:restriction base="enumType">
@@ -546,7 +546,7 @@
 										<uiTip>Source code language.</uiTip>
 										<bioagentsUsage>Optional</bioagentsUsage>
 									</xs:appinfo>
-									<xs:documentation>For an explanation of valid values see github.com/bio-agents/bioagentsschema.</xs:documentation>
+									<xs:documentation>For an explanation of valid values see github.com/bio-agents/bioagents-schema.</xs:documentation>
 								</xs:annotation>
 								<xs:simpleType>
 									<xs:restriction base="enumType">
@@ -613,7 +613,7 @@
 										<uiTip>Software or data usage license.</uiTip>
 										<bioagentsUsage>Recommended</bioagentsUsage>
 									</xs:appinfo>
-									<xs:documentation>For an explanation of valid values see github.com/bio-agents/bioagentsschema.  Based on the specified license a label (e.g. "Open-source") is attached to the agent.</xs:documentation>
+									<xs:documentation>For an explanation of valid values see github.com/bio-agents/bioagents-schema.  Based on the specified license a label (e.g. "Open-source") is attached to the agent.</xs:documentation>
 									<xs:appinfo>
 										<enum>
 											<enumItem>
@@ -688,7 +688,7 @@
 							<xs:element name="status" minOccurs="0" maxOccurs="unbounded">
 								<xs:annotation>
 									<xs:documentation>Label describing miscellaneous status of the software.</xs:documentation>
-									<xs:documentation>For an explanation of valid values see github.com/bio-agents/bioagentsschema.</xs:documentation>
+									<xs:documentation>For an explanation of valid values see github.com/bio-agents/bioagents-schema.</xs:documentation>
 									<xs:appinfo>
 										<uiTip>Tag describing the software status.</uiTip>
 										<bioagentsUsage>Optional</bioagentsUsage>
@@ -788,7 +788,7 @@
 							<xs:element name="type">
 								<xs:annotation>
 									<xs:documentation>Type of relation between this and another registered software.</xs:documentation>
-									<xs:documentation>Certain relations may only be defined between certain types of agent. For an explanation of valid values see github.com/bio-agents/bioagentsschema.</xs:documentation>
+									<xs:documentation>Certain relations may only be defined between certain types of agent. For an explanation of valid values see github.com/bio-agents/bioagents-schema.</xs:documentation>
 									<xs:appinfo>
 										<uiTip>Type of relation between this and another registered software.</uiTip>
 										<bioagentsUsage>Optional</bioagentsUsage>
@@ -906,7 +906,7 @@
 													<uiTip>Template for a URL fragment, which when appended to the base URL, defines the syntax of a valid resolvable URL.  The template can include parameters that must be substituted before the URL is resolved.</uiTip>
 													<bioagentsUsage>Mandatory (conditionally)</bioagentsUsage>
 												</xs:appinfo>
-												<xs:documentation>The value is text adhering to a strict syntax, see https://github.com/bio-agents/bioagentsschema.</xs:documentation>
+												<xs:documentation>The value is text adhering to a strict syntax, see https://github.com/bio-agents/bioagents-schema.</xs:documentation>
 												<xs:appinfo>
 													<altova:exampleValues>
 														<altova:example value="/agent/{agentID}"/>
@@ -956,7 +956,7 @@
 												<xs:element name="summary" type="textType" minOccurs="0">
 													<xs:annotation>
 														<xs:documentation>A textual summary of a service endpoint.  </xs:documentation>
-														<xs:documentation>The value is text with optional markdown, see https://github.com/bio-agents/bioagentsschema.</xs:documentation>
+														<xs:documentation>The value is text with optional markdown, see https://github.com/bio-agents/bioagents-schema.</xs:documentation>
 														<xs:appinfo>
 															<uiTip>Summary of service endpoint.</uiTip>
 															<bioagentsUsage>Mandatory (conditionally)</bioagentsUsage>
@@ -983,7 +983,7 @@
 																<bioagentsUsage>Mandatory (conditionally)</bioagentsUsage>
 															</xs:appinfo>
 															<xs:documentation>A fragment from the URL template corresponding to a URL parameter, which is replaced by some value when the service is called.</xs:documentation>
-															<xs:documentation>The value is text adhering to a strict syntax, see https://github.com/bio-agents/bioagentsschema.</xs:documentation>
+															<xs:documentation>The value is text adhering to a strict syntax, see https://github.com/bio-agents/bioagents-schema.</xs:documentation>
 															<xs:appinfo>
 																<altova:exampleValues>
 																	<altova:example value="{agentID}"/>
@@ -1078,7 +1078,7 @@
 													</enumItem>
 												</enum>
 											</xs:appinfo>
-											<xs:appinfo>For an explanation of valid values see github.com/bio-agents/bioagentsschema.</xs:appinfo>
+											<xs:appinfo>For an explanation of valid values see github.com/bio-agents/bioagents-schema.</xs:appinfo>
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="enumType">
@@ -1200,7 +1200,7 @@
 											</enumItem>
 										</enum>
 									</xs:appinfo>
-									<xs:documentation>For an explanation of valid values see github.com/bio-agents/bioagentsschema.</xs:documentation>
+									<xs:documentation>For an explanation of valid values see github.com/bio-agents/bioagents-schema.</xs:documentation>
 								</xs:annotation>
 								<xs:simpleType>
 									<xs:restriction base="enumType">
@@ -1333,7 +1333,7 @@
 										</enum>
 									</xs:appinfo>
 									<xs:documentation>The container format indicates whether the virtual machine image is in a file format that also contains metadata about the actual virtual machine.</xs:documentation>
-									<xs:documentation>For valid values see github.com/bio-agents/bioagentsschema.
+									<xs:documentation>For valid values see github.com/bio-agents/bioagents-schema.
 A value of ‘bare’ should be specified if there is no container or metadata envelope for the image. </xs:documentation>
 								</xs:annotation>
 								<xs:simpleType>
@@ -1431,11 +1431,11 @@ A value of ‘bare’ should be specified if there is no container or metadata e
 													</enumItem>
 													<enumItem>
 														<term>Other</term>
-														<uiTip>Some other type of documentation not listed in bioagentsSchema.</uiTip>
+														<uiTip>Some other type of documentation not listed in bioagents schema.</uiTip>
 													</enumItem>
 												</enum>
 											</xs:appinfo>
-											<xs:appinfo>For an explanation of valid values see github.com/bio-agents/bioagentsschema.</xs:appinfo>
+											<xs:appinfo>For an explanation of valid values see github.com/bio-agents/bioagents-schema.</xs:appinfo>
 										</xs:annotation>
 										<xs:simpleType>
 											<xs:restriction base="enumType">
@@ -1521,7 +1521,7 @@ A value of ‘bare’ should be specified if there is no container or metadata e
 											</enumItem>
 										</enum>
 									</xs:appinfo>
-									<xs:documentation>For an explanation of valid values see github.com/bio-agents/bioagentsschema.</xs:documentation>
+									<xs:documentation>For an explanation of valid values see github.com/bio-agents/bioagents-schema.</xs:documentation>
 								</xs:annotation>
 								<xs:simpleType>
 									<xs:restriction base="enumType">
